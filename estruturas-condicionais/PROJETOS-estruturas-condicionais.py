@@ -39,6 +39,20 @@ if(resultado < 0):
     print("É NEGATIVO")
 else:
     print("É POSITIVO")
+    
+# Ex 11
+lado1 = float(input("Digite o primeiro lado: "))
+lado2 = float(input("Digite o segundo lado: "))
+lado3 = float(input("Digite o terceiro lado: "))
+
+if(lado1 + lado2 > lado3) and (lado2 + lado3 > lado1) and (lado3 + lado1 > lado2):
+    print("Forma um: TRIÂNGULO")
+elif(lado1 == lado2 == lado3):
+    print("Forma um: TRIÂNGULO EQUILÁTERO")
+elif(lado1 == lado2 or lado2 == lado3 or lado3 == lado1):
+    print("Forma um: TRIÂNGULO ISÓSCELES")
+else:
+    print("Forma um: TRIÂNGULO ESCALENO")
 
 
 # Ex 12
